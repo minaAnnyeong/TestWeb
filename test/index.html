@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Password Input</title>
+  </head>
+  <body>
+    <!--id/pw Login form-->
+    <section id="overlay">
+      <!--
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      -->
+      <hr>
+      <form>
+				<h1>Login to start</h1>
+        <label for="username">Username:</label>
+  			  <input type="text" name="username" id="username" value="id"
+        minlength="5" maxlength="15" required pattern="[a-zA-Z0-9]+">
+               <!--id;s allowed only letters and numbers : pattern="[a-zA-Z0-9]+"-->
+        <br>
+        <label for="user-pw">Password:</label>
+			    <input type="password" name="user-pw" id="user-pw" value="password"
+       minlength="8" maxlength="15" required>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <hr>
+
+    <!---->
+    <section class="range-bar">
+        <label for="range-bar">Range Bar Section</label>
+        <span>Bottom</span>
+          <input type="range" name="range-bar" id="range-bar" value="5" min="0" max="10" step="1">
+        <span>Top</span>
+    </section>
+    <hr>
+
+    <!---->
+    <section class="check-box">
+        <span>Check Boxes Section</span>
+        <br>
+        <input id="check-box-1" name="name" type="checkbox" value="check-box-1">
+            <label for="check-box-1">check-box-1</label>
+        <input id="check-box-2" name="name" type ="checkbox" value="check-box-2">
+            <label for="check-box-2">check-box-2</label>
+        <input id="check-box-3" name="name" type="checkbox" value="check-box-3">
+            <label for="check-box-3">check-box-3</label>
+    </section>
+    <hr>
+
+    <!---->
+    <section class="radio">
+        <span>Radio button section</span>
+        <br>
+        <input id="radio-1" name="name" type="radio" value="radio-1">
+          <label for="radio-1">1</label>
+        <input id="radio-2" name="name" type="radio" value="radio-2">
+          <label for="radio-2">2</label>
+        <input id="radio-3" name="name" type="radio" value="radio-3">
+          <label for="radio-3">3</label>
+      </section>
+    <hr>
+
+    <!---->
+    <section class="downdrop-list">
+        <span>Downdrop List section</span>
+        <br>
+        <input id="radio-1" name="name" type="downdrop" value="radio-1">
+    </section>
+    <hr>
+
+    <!--Summit Button-->
+    <section class="submission">
+      <input type="submit" value="Submit">
+    </section>
+
+  </body>
+</html>
+
+
+<!--ip: 192.168.43.85-->
